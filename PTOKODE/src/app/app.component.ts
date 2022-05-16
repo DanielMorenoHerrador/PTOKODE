@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { MovieComponent } from './movie/Componentes/movie/movie.component';
 import { ApiService } from './movie/servicios/api.service';
+import { Movie } from './movie/modelos/movie';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -14,9 +16,15 @@ export class AppComponent {
 
   getAllMovie() {
     this.apiservice.getAllMovie()
-    .subscribe(Movies => {
-      console.log(Movies);
+    .subscribe(Movie => {
+      console.log(Movie);
     })
     
   }
-}
+  mostrarPeliculas() {
+    console.log()
+    }
+    
+  }
+
+

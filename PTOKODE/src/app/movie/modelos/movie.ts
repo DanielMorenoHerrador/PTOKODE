@@ -1,6 +1,10 @@
 export interface Movie {
-    id: string; // Identificador la frase aleatoria
-    overview: string;
-    poster_path: string; // Contiene la frase
-    title: string;
+    data: ReqMovie;
+}
+
+interface ReqMovie {
+    id: number,
+    overview: string,
+    poster_path: string,
+    title: string
 }
