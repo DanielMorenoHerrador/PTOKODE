@@ -4,5 +4,4 @@ export interface Movie {
     id: string; // Identificador la frase aleatoria
     url: string; // URL que contiene el ID y permite recuperar la frase
     title: string;
-    video: boolean;
 }
